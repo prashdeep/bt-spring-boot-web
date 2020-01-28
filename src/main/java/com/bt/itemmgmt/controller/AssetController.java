@@ -10,6 +10,6 @@ public class AssetController {
 
     @GetMapping
     public String greet(){
-        return "Hello world";
+        return "Rest API for greet message";
     }
 }
