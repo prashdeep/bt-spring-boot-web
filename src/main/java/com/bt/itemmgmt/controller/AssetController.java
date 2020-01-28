@@ -28,8 +28,6 @@ public class AssetController {
 
     @ResponseStatus(HttpStatus.CREATED)
     public Item saveItem(@RequestBody Item item){
-        System.out.println("Inside the saveitem method of controller");
-        System.out.println("Item >> "+item);
         return this.assetService.save(item);
     }
 
