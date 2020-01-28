@@ -13,6 +13,8 @@ import java.io.Serializable;
 @ToString
 @EqualsAndHashCode(of = "itemId")
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class Item implements Serializable, Comparable<Item> {
 
