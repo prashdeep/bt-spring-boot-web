@@ -2,6 +2,10 @@ package com.bt.itemmgmt.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.io.Serializable;
 
 @Setter
@@ -9,8 +13,11 @@ import java.io.Serializable;
 @ToString
 @EqualsAndHashCode(of = "itemId")
 @Builder
+@Entity
 public class Item implements Serializable, Comparable<Item> {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long itemId;
 
     private String itemName;
