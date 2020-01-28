@@ -2,6 +2,8 @@ package com.bt.itemmgmt.controller;
 
 import com.bt.itemmgmt.model.Item;
 import com.bt.itemmgmt.service.ItemService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +12,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.Arrays;
 import java.util.List;
 
 import static org.springframework.http.MediaType.*;
@@ -19,6 +22,9 @@ import static org.springframework.http.MediaType.*;
 public class AssetController {
 
     private ItemService assetService;
+
+    @Autowired
+    private ApplicationContext applicationContext;
 
     public AssetController(ItemService assetService){
         this.assetService = assetService;
@@ -49,6 +55,12 @@ public class AssetController {
     @DeleteMapping(value = "/{itemId}")
     public void deleteItemById( @PathVariable ("itemId") long itemId){
         this.assetService.deleteItemById(itemId);
+    }
+
+
+    @GetMapping("/beans")
+    public List<String> getBeans(){
+        return Arrays.asList(this.applicationContext.getBeanDefinitionNames());
     }
 
     //@ExceptionHandler(RuntimeException.class)
