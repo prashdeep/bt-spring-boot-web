@@ -3,6 +3,7 @@ package com.bt.itemmgmt.controller;
 import com.bt.itemmgmt.model.Item;
 import com.bt.itemmgmt.service.ItemService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,6 +23,9 @@ import static org.springframework.http.MediaType.*;
 public class AssetController {
 
     private ItemService assetService;
+
+    @Value("${app.env}")
+    private String env;
 
     @Autowired
     private ApplicationContext applicationContext;
@@ -61,6 +65,11 @@ public class AssetController {
     @GetMapping("/beans")
     public List<String> getBeans(){
         return Arrays.asList(this.applicationContext.getBeanDefinitionNames());
+    }
+
+    @GetMapping("/env")
+    public String getCurrentenv(){
+        return "{\"env\": \""+this.env+"\"}";
     }
 
     //@ExceptionHandler(RuntimeException.class)
