@@ -1,10 +1,13 @@
 package com.bt.itemmgmt.config;
 
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.crypto.password.NoOpPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
@@ -17,12 +20,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
         httpSecurity
                 .authorizeRequests()
-                .antMatchers("/api/v1/admins/**")
-                .hasAnyRole("USER", "ADMIN")
                 .antMatchers("/api/v1/users/**")
-                .hasRole("USER")
+                .hasAnyRole("USER", "ADMIN")
+                .antMatchers("/api/v1/admins/**")
+                .hasRole("ADMIN")
                 .antMatchers("/api/v1/assets/**")
-                .permitAll();
+                .permitAll()
+                .and()
+                .httpBasic();
 
 
     }
@@ -31,6 +36,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
         authenticationManagerBuilder
                 .inMemoryAuthentication()
+                .passwordEncoder(passwordEncoder())
                 .withUser("kiran")
                 .password("user")
                 .roles("USER")
@@ -40,5 +46,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .roles("USER", "ADMIN");
 
 
+    }
+
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        return NoOpPasswordEncoder.getInstance();
     }
 }
