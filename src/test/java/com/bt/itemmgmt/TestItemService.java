@@ -1,7 +1,8 @@
-package com.bt.itemmgmt.service;
+package com.bt.itemmgmt;
 
 import com.bt.itemmgmt.model.Item;
 import com.bt.itemmgmt.repository.ItemRepository;
+import com.bt.itemmgmt.service.ItemServiceImpl;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;

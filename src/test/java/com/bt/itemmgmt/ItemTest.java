@@ -1,5 +1,6 @@
-package com.bt.itemmgmt.model;
+package com.bt.itemmgmt;
 
+import com.bt.itemmgmt.model.Item;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,0 +1,225 @@
+2020-01-30 10:11:20,813 INFO c.b.i.SpringBootDemoApplicationTests [main] Starting SpringBootDemoApplicationTests on LAPTOP-MAI0FJBD with PID 27404 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 10:11:20,873 DEBUG c.b.i.SpringBootDemoApplicationTests [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 10:11:20,874 INFO c.b.i.SpringBootDemoApplicationTests [main] The following profiles are active: dev
+2020-01-30 10:11:25,858 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 10:11:26,052 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 169ms. Found 3 JPA repository interfaces.
+2020-01-30 10:11:27,023 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 10:11:27,632 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 10:11:27,863 INFO o.h.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-30 10:11:28,149 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 10:11:28,427 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-01-30 10:11:28,911 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-01-30 10:11:29,021 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-30 10:11:30,606 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 10:11:30,656 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:11:34,344 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@62fcf22e, org.springframework.security.web.context.SecurityContextPersistenceFilter@29bfe521, org.springframework.security.web.header.HeaderWriterFilter@754d5868, org.springframework.security.web.authentication.logout.LogoutFilter@7cd47687, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@75b8c5b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@cee97ae, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@286271ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2ad25e57, org.springframework.security.web.session.SessionManagementFilter@1244c8b0, org.springframework.security.web.access.ExceptionTranslationFilter@12a97491, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2ca9cbc1]
+2020-01-30 10:11:35,389 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:11:36,127 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-01-30 10:11:36,244 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-01-30 10:11:36,265 INFO s.d.s.w.s.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-01-30 10:11:36,691 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_1
+2020-01-30 10:11:36,700 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingDELETE_1
+2020-01-30 10:11:36,705 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_2
+2020-01-30 10:11:36,709 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_3
+2020-01-30 10:11:36,715 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_4
+2020-01-30 10:11:36,718 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_5
+2020-01-30 10:11:36,722 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_6
+2020-01-30 10:11:36,728 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_7
+2020-01-30 10:11:36,753 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_8
+2020-01-30 10:11:36,765 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_9
+2020-01-30 10:11:36,772 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_10
+2020-01-30 10:11:36,798 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_11
+2020-01-30 10:11:36,806 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_12
+2020-01-30 10:11:36,811 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_13
+2020-01-30 10:11:36,831 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_14
+2020-01-30 10:11:36,839 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_15
+2020-01-30 10:11:36,845 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_16
+2020-01-30 10:11:36,865 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingPOST_1
+2020-01-30 10:11:36,870 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_17
+2020-01-30 10:11:36,873 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_18
+2020-01-30 10:11:36,882 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: testUsingGET_1
+2020-01-30 10:11:36,970 INFO c.b.i.SpringBootDemoApplicationTests [main] Started SpringBootDemoApplicationTests in 17.181 seconds (JVM running for 22.826)
+2020-01-30 10:11:37,873 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:11:38,167 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:11:38,171 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-01-30 10:11:38,176 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-01-30 10:14:44,220 INFO c.b.i.SpringBootDemoApplicationTests [main] Starting SpringBootDemoApplicationTests on LAPTOP-MAI0FJBD with PID 19584 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 10:14:44,283 DEBUG c.b.i.SpringBootDemoApplicationTests [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 10:14:44,288 INFO c.b.i.SpringBootDemoApplicationTests [main] The following profiles are active: dev
+2020-01-30 10:14:49,339 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 10:14:49,535 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 163ms. Found 3 JPA repository interfaces.
+2020-01-30 10:14:50,385 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 10:14:50,952 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 10:14:51,200 INFO o.h.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-30 10:14:51,498 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 10:14:51,707 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-01-30 10:14:52,152 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-01-30 10:14:52,273 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-30 10:14:53,831 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 10:14:53,875 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:14:57,376 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30a5406d, org.springframework.security.web.context.SecurityContextPersistenceFilter@271cefbd, org.springframework.security.web.header.HeaderWriterFilter@51457a82, org.springframework.security.web.authentication.logout.LogoutFilter@3cbe1418, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@2decfff3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40c06956, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74228714, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5e7c75f3, org.springframework.security.web.session.SessionManagementFilter@70ad3b3a, org.springframework.security.web.access.ExceptionTranslationFilter@5873ebc2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6bd750a0]
+2020-01-30 10:14:58,523 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:14:59,273 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-01-30 10:14:59,353 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-01-30 10:14:59,430 INFO s.d.s.w.s.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-01-30 10:14:59,837 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_1
+2020-01-30 10:14:59,845 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingDELETE_1
+2020-01-30 10:14:59,849 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_2
+2020-01-30 10:14:59,853 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_3
+2020-01-30 10:14:59,858 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_4
+2020-01-30 10:14:59,863 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_5
+2020-01-30 10:14:59,867 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_6
+2020-01-30 10:14:59,874 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_7
+2020-01-30 10:14:59,881 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_8
+2020-01-30 10:14:59,885 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_9
+2020-01-30 10:14:59,903 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_10
+2020-01-30 10:14:59,920 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_11
+2020-01-30 10:14:59,928 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_12
+2020-01-30 10:14:59,932 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_13
+2020-01-30 10:14:59,935 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_14
+2020-01-30 10:14:59,946 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_15
+2020-01-30 10:14:59,963 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_16
+2020-01-30 10:14:59,984 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingPOST_1
+2020-01-30 10:14:59,992 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_17
+2020-01-30 10:14:59,996 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_18
+2020-01-30 10:15:00,000 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: testUsingGET_1
+2020-01-30 10:15:00,163 INFO c.b.i.SpringBootDemoApplicationTests [main] Started SpringBootDemoApplicationTests in 17.26 seconds (JVM running for 22.686)
+2020-01-30 10:15:01,189 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:15:01,495 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:15:01,499 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-01-30 10:15:01,507 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-01-30 10:19:40,040 INFO c.b.i.SpringBootDemoApplicationTests [main] Starting SpringBootDemoApplicationTests on LAPTOP-MAI0FJBD with PID 16796 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 10:19:40,066 DEBUG c.b.i.SpringBootDemoApplicationTests [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 10:19:40,066 INFO c.b.i.SpringBootDemoApplicationTests [main] The following profiles are active: dev
+2020-01-30 10:19:42,404 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 10:19:42,585 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 161ms. Found 3 JPA repository interfaces.
+2020-01-30 10:19:43,403 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 10:19:43,972 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 10:19:44,168 INFO o.h.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-30 10:19:44,393 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 10:19:44,559 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-01-30 10:19:45,109 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-01-30 10:19:45,191 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-30 10:19:46,816 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 10:19:46,831 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:19:50,083 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2764a753, org.springframework.security.web.context.SecurityContextPersistenceFilter@5c76c0c7, org.springframework.security.web.header.HeaderWriterFilter@2c584f0d, org.springframework.security.web.authentication.logout.LogoutFilter@753530df, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@62c7220a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74228714, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@10f13284, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3e7bdb49, org.springframework.security.web.session.SessionManagementFilter@7eee8280, org.springframework.security.web.access.ExceptionTranslationFilter@66efd301, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6034e923]
+2020-01-30 10:19:50,767 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:19:51,394 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-01-30 10:19:51,442 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-01-30 10:19:51,462 INFO s.d.s.w.s.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-01-30 10:19:51,790 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_1
+2020-01-30 10:19:51,798 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingDELETE_1
+2020-01-30 10:19:51,801 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_2
+2020-01-30 10:19:51,806 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_3
+2020-01-30 10:19:51,810 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_4
+2020-01-30 10:19:51,815 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_5
+2020-01-30 10:19:51,818 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_6
+2020-01-30 10:19:51,821 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_7
+2020-01-30 10:19:51,825 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_8
+2020-01-30 10:19:51,829 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_9
+2020-01-30 10:19:51,833 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_10
+2020-01-30 10:19:51,842 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_11
+2020-01-30 10:19:51,845 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_12
+2020-01-30 10:19:51,849 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_13
+2020-01-30 10:19:51,853 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_14
+2020-01-30 10:19:51,857 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_15
+2020-01-30 10:19:51,861 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_16
+2020-01-30 10:19:51,865 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingPOST_1
+2020-01-30 10:19:51,869 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_17
+2020-01-30 10:19:51,873 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_18
+2020-01-30 10:19:51,878 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: testUsingGET_1
+2020-01-30 10:19:51,926 INFO c.b.i.SpringBootDemoApplicationTests [main] Started SpringBootDemoApplicationTests in 12.452 seconds (JVM running for 16.338)
+2020-01-30 10:19:52,421 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:19:52,611 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:19:52,614 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-01-30 10:19:52,620 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-01-30 10:42:26,857 INFO c.b.i.SpringBootDemoApplicationTests [main] Starting SpringBootDemoApplicationTests on LAPTOP-MAI0FJBD with PID 5856 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 10:42:26,918 DEBUG c.b.i.SpringBootDemoApplicationTests [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 10:42:26,923 INFO c.b.i.SpringBootDemoApplicationTests [main] The following profiles are active: dev
+2020-01-30 10:42:31,455 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 10:42:31,648 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 173ms. Found 3 JPA repository interfaces.
+2020-01-30 10:42:32,519 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 10:42:33,087 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 10:42:33,328 INFO o.h.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-30 10:42:33,585 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 10:42:33,789 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-01-30 10:42:34,245 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-01-30 10:42:34,323 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-30 10:42:35,836 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 10:42:35,906 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:42:39,143 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2015c867, org.springframework.security.web.context.SecurityContextPersistenceFilter@5f1d5bf2, org.springframework.security.web.header.HeaderWriterFilter@556ab4d1, org.springframework.security.web.authentication.logout.LogoutFilter@4fefb355, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@76df13c0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7eb56086, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d8b9e38, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7d9ec45c, org.springframework.security.web.session.SessionManagementFilter@26678067, org.springframework.security.web.access.ExceptionTranslationFilter@7daa87c0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5e7c75f3]
+2020-01-30 10:42:40,006 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:42:40,613 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-01-30 10:42:40,718 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-01-30 10:42:40,752 INFO s.d.s.w.s.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-01-30 10:42:41,207 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_1
+2020-01-30 10:42:41,213 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingDELETE_1
+2020-01-30 10:42:41,217 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_2
+2020-01-30 10:42:41,221 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_3
+2020-01-30 10:42:41,225 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_4
+2020-01-30 10:42:41,228 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_5
+2020-01-30 10:42:41,234 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_6
+2020-01-30 10:42:41,250 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_7
+2020-01-30 10:42:41,266 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_8
+2020-01-30 10:42:41,270 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_9
+2020-01-30 10:42:41,274 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_10
+2020-01-30 10:42:41,285 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_11
+2020-01-30 10:42:41,290 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_12
+2020-01-30 10:42:41,295 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_13
+2020-01-30 10:42:41,302 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_14
+2020-01-30 10:42:41,329 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_15
+2020-01-30 10:42:41,357 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_16
+2020-01-30 10:42:41,361 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingPOST_1
+2020-01-30 10:42:41,367 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_17
+2020-01-30 10:42:41,387 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_18
+2020-01-30 10:42:41,411 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: testUsingGET_1
+2020-01-30 10:42:41,572 INFO c.b.i.SpringBootDemoApplicationTests [main] Started SpringBootDemoApplicationTests in 15.632 seconds (JVM running for 21.196)
+2020-01-30 10:42:42,570 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:42:42,925 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:42:42,929 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-01-30 10:42:42,936 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-01-30 10:50:18,380 INFO c.b.i.SpringBootDemoApplicationTests [main] Starting SpringBootDemoApplicationTests on LAPTOP-MAI0FJBD with PID 11604 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 10:50:18,412 DEBUG c.b.i.SpringBootDemoApplicationTests [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 10:50:18,413 INFO c.b.i.SpringBootDemoApplicationTests [main] The following profiles are active: dev
+2020-01-30 10:50:21,569 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 10:50:21,729 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 137ms. Found 3 JPA repository interfaces.
+2020-01-30 10:50:22,561 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 10:50:23,059 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 10:50:23,228 INFO o.h.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-30 10:50:23,468 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 10:50:23,638 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-01-30 10:50:24,072 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-01-30 10:50:24,130 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-30 10:50:25,628 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 10:50:25,645 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:50:29,219 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4cd7b0a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@2ae73233, org.springframework.security.web.header.HeaderWriterFilter@774dc243, org.springframework.security.web.authentication.logout.LogoutFilter@1dc7e9b6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@682c6053, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@698745b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e3c6ac3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77efb578, org.springframework.security.web.session.SessionManagementFilter@418edaa5, org.springframework.security.web.access.ExceptionTranslationFilter@271cefbd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3e7bdb49]
+2020-01-30 10:50:30,123 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:50:30,848 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-01-30 10:50:30,937 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-01-30 10:50:30,967 INFO s.d.s.w.s.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-01-30 10:50:31,359 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_1
+2020-01-30 10:50:31,368 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingDELETE_1
+2020-01-30 10:50:31,373 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_2
+2020-01-30 10:50:31,380 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_3
+2020-01-30 10:50:31,384 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_4
+2020-01-30 10:50:31,387 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_5
+2020-01-30 10:50:31,393 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_6
+2020-01-30 10:50:31,409 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_7
+2020-01-30 10:50:31,424 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_8
+2020-01-30 10:50:31,430 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_9
+2020-01-30 10:50:31,435 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_10
+2020-01-30 10:50:31,473 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_11
+2020-01-30 10:50:31,504 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_12
+2020-01-30 10:50:31,516 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_13
+2020-01-30 10:50:31,522 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_14
+2020-01-30 10:50:31,545 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_15
+2020-01-30 10:50:31,570 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_16
+2020-01-30 10:50:31,600 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingPOST_1
+2020-01-30 10:50:31,604 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_17
+2020-01-30 10:50:31,610 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_18
+2020-01-30 10:50:31,632 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: testUsingGET_1
+2020-01-30 10:50:31,751 INFO c.b.i.SpringBootDemoApplicationTests [main] Started SpringBootDemoApplicationTests in 14.497 seconds (JVM running for 20.364)
+2020-01-30 10:50:32,742 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 10:50:33,045 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 10:50:33,048 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-01-30 10:50:33,053 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
