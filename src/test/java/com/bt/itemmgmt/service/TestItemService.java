@@ -5,6 +5,7 @@ import com.bt.itemmgmt.repository.ItemRepository;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.test.context.junit4.SpringRunner;
@@ -13,6 +14,8 @@ import org.springframework.util.Assert;
 import java.util.Optional;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 import static org.mockito.Mockito.*;
 import static org.springframework.util.Assert.notNull;
 
@@ -52,10 +55,38 @@ public class TestItemService {
         assertEquals(returnedItem.getItemId(), 1);
         verify(itemRepository, atMostOnce()).findById(1L);
     }
+
+    @Test
+    public void testValidFindById(){
+        when(itemRepository.findById(1L)).thenReturn(Optional.of(new Item()));
+        try {
+            Item returnedItem = itemService.findById(1L);
+            Assert.notNull(returnedItem);
+        }catch (Exception e){
+            fail("Should not throw Illegal Argument Exception");
+
+        }
+        verify(itemRepository, atMostOnce()).findById(1L);
+    }
+    //@Test(expected = IllegalArgumentException.class)
     @Test
     public void testInvalidFindById(){
-        when(itemRepository.findById(1L)).thenReturn(Optional.of(new Item()));
-        Item returnedItem = itemService.findById(1L);
+        when(itemRepository.findById(anyLong())).thenReturn(null);
+        try {
+            Item returnedItem = itemService.findById(1L);
+           // fail("Should Throw an exception");
+        }catch (Exception e){
+            Assert.notNull(e, "Exception should not be null");
+            e.printStackTrace();
+            //assertTrue(e instanceof IllegalArgumentException);
+
+        }
         verify(itemRepository, atMostOnce()).findById(1L);
+    }
+
+    @Test
+    public void testDeleteById(){
+        itemService.deleteItemById(1L);
+        verify(itemRepository, times(1)).deleteById(1L);
     }
 }
