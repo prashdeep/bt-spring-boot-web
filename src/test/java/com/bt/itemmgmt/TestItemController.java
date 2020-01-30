@@ -17,8 +17,8 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
 
 import java.util.Arrays;
-
 import static org.mockito.Mockito.when;
+import static org.springframework.security.test.web.servlet.setup.SecurityMockMvcConfigurers.springSecurity;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -39,6 +39,7 @@ public class TestItemController {
     public void setupMockMvc() {
         mockMvc = MockMvcBuilders
                 .webAppContextSetup(context)
+                .apply(springSecurity())
                 .build();
     }
 
@@ -52,4 +53,6 @@ public class TestItemController {
                 .andDo(print())
                 .andExpect(status().isOk());
     }
+
+
 }

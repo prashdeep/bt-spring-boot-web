@@ -16,7 +16,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
-    @Autowired
+    @Autowired(required = false)
     private DomainUserDetailsService domainUserDetailsService;
 
     @Override
@@ -41,7 +41,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder authenticationManagerBuilder) throws Exception {
-        /*authenticationManagerBuilder
+        authenticationManagerBuilder
                 .inMemoryAuthentication()
                 .passwordEncoder(passwordEncoder())
                 .withUser("kiran")
@@ -50,11 +50,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .and()
                 .withUser("vinay")
                 .password(passwordEncoder().encode("admin"))
-                .roles("USER", "ADMIN");*/
+                .roles("USER", "ADMIN");
 
-        authenticationManagerBuilder
+        /*authenticationManagerBuilder
                 .userDetailsService(this.domainUserDetailsService)
-                .passwordEncoder(passwordEncoder());
+                .passwordEncoder(passwordEncoder());*/
     }
 
     @Bean
