@@ -4,11 +4,12 @@ import com.bt.itemmgmt.model.Item;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 import static org.junit.Assert.assertTrue;
 
-@RunWith(SpringRunner.class)
-public class ItemTest  {
+@RunWith(SpringJUnit4ClassRunner.class)
+public class ItemTest {
 
     @Test
     public void testConstructor(){

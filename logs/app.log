@@ -223,3 +223,405 @@
 2020-01-30 10:50:33,045 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-01-30 10:50:33,048 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
 2020-01-30 10:50:33,053 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-01-30 11:06:37,189 INFO c.b.i.TestItemController [main] Starting TestItemController on LAPTOP-MAI0FJBD with PID 20944 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:06:37,206 DEBUG c.b.i.TestItemController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:06:37,206 INFO c.b.i.TestItemController [main] The following profiles are active: dev
+2020-01-30 11:06:38,624 WARN o.s.w.c.s.GenericWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through field 'domainUserDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bt.itemmgmt.service.DomainUserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-01-30 11:06:38,671 ERROR o.s.t.c.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@512d6e60] to prepare test instance [com.bt.itemmgmt.TestItemController@1de9b505]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through field 'domainUserDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bt.itemmgmt.service.DomainUserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bt.itemmgmt.service.DomainUserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 25 more
+2020-01-30 11:08:51,756 INFO c.b.i.TestItemController [main] Starting TestItemController on LAPTOP-MAI0FJBD with PID 31684 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:08:51,774 DEBUG c.b.i.TestItemController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:08:51,774 INFO c.b.i.TestItemController [main] The following profiles are active: dev
+2020-01-30 11:08:53,200 WARN o.s.w.c.s.GenericWebApplicationContext [main] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through field 'domainUserDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bt.itemmgmt.service.DomainUserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-01-30 11:08:53,231 ERROR o.s.t.c.TestContextManager [main] Caught exception while allowing TestExecutionListener [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@663bb8ef] to prepare test instance [com.bt.itemmgmt.TestItemController@2f4e40d7]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:132) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:123) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.postProcessFields(MockitoTestExecutionListener.java:95) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.injectFields(MockitoTestExecutionListener.java:79) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener.prepareTestInstance(MockitoTestExecutionListener.java:54) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:244) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) [spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) [junit-4.12.jar:4.12]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242) [junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70) [junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'securityConfiguration': Unsatisfied dependency expressed through field 'domainUserDetailsService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bt.itemmgmt.service.DomainUserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 25 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.bt.itemmgmt.service.DomainUserDetailsService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1695) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1253) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1207) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:116) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1422) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:517) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:323) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:321) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:879) ~[spring-beans-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:878) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550) ~[spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) ~[spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:126) ~[spring-boot-test-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	... 25 more
+2020-01-30 11:09:55,551 INFO c.b.i.TestItemController [main] Starting TestItemController on LAPTOP-MAI0FJBD with PID 32996 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:09:55,567 DEBUG c.b.i.TestItemController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:09:55,568 INFO c.b.i.TestItemController [main] The following profiles are active: dev
+2020-01-30 11:09:57,451 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6232ffdb, org.springframework.security.web.context.SecurityContextPersistenceFilter@7d57dbb5, org.springframework.security.web.header.HeaderWriterFilter@47406941, org.springframework.security.web.authentication.logout.LogoutFilter@14f40030, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6c1cfa53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@532e27ab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e72a6cc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@330c1f61, org.springframework.security.web.session.SessionManagementFilter@737db7f8, org.springframework.security.web.access.ExceptionTranslationFilter@5e922647, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@12a14b74]
+2020-01-30 11:09:57,761 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:09:58,067 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:09:58,088 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 20 ms
+2020-01-30 11:09:58,126 INFO c.b.i.TestItemController [main] Started TestItemController in 2.838 seconds (JVM running for 5.765)
+2020-01-30 11:09:58,154 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:09:58,156 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:09:58,374 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:11:55,355 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 9172 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:11:55,370 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:11:55,370 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:11:56,846 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5b051a5c, org.springframework.security.web.context.SecurityContextPersistenceFilter@6cd166b8, org.springframework.security.web.header.HeaderWriterFilter@149c3204, org.springframework.security.web.authentication.logout.LogoutFilter@2c0b4c83, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@24934262, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@75fc1992, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3672276e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@639aba11, org.springframework.security.web.session.SessionManagementFilter@26d96e5, org.springframework.security.web.access.ExceptionTranslationFilter@73fc518f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@56f521c6]
+2020-01-30 11:11:57,133 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:11:57,436 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:11:57,457 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 20 ms
+2020-01-30 11:11:57,501 INFO c.b.i.TestUserController [main] Started TestUserController in 2.41 seconds (JVM running for 5.154)
+2020-01-30 11:11:57,762 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:11:57,764 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:11:57,861 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:13:07,139 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 19988 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:13:07,154 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:13:07,155 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:13:08,533 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fcfca62, org.springframework.security.web.context.SecurityContextPersistenceFilter@4e6f2bb5, org.springframework.security.web.header.HeaderWriterFilter@ad9e63e, org.springframework.security.web.authentication.logout.LogoutFilter@3a230001, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6137cf6e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f628ce9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@75fc1992, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@499ef98e, org.springframework.security.web.session.SessionManagementFilter@64f16277, org.springframework.security.web.access.ExceptionTranslationFilter@62d73ead, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@671facee]
+2020-01-30 11:13:08,802 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:13:09,143 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:13:09,160 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 17 ms
+2020-01-30 11:13:09,194 INFO c.b.i.TestUserController [main] Started TestUserController in 2.318 seconds (JVM running for 5.063)
+2020-01-30 11:13:09,417 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:13:09,420 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:13:09,504 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:14:21,140 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 19756 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:14:21,154 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:14:21,155 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:14:22,578 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@10641c09, org.springframework.security.web.context.SecurityContextPersistenceFilter@3abfe845, org.springframework.security.web.header.HeaderWriterFilter@35e8316e, org.springframework.security.web.authentication.logout.LogoutFilter@6d7cada5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@341672e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3672276e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@54657dd2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@34f392be, org.springframework.security.web.session.SessionManagementFilter@38af1bf6, org.springframework.security.web.access.ExceptionTranslationFilter@2cc03cd1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@39fa8ad2]
+2020-01-30 11:14:22,852 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:14:23,167 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:14:23,190 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 22 ms
+2020-01-30 11:14:23,230 INFO c.b.i.TestUserController [main] Started TestUserController in 2.352 seconds (JVM running for 5.134)
+2020-01-30 11:14:23,500 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:14:23,503 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 3 ms
+2020-01-30 11:14:23,588 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:15:44,208 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 8940 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:15:44,226 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:15:44,227 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:15:45,702 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a87b51, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e60ece, org.springframework.security.web.header.HeaderWriterFilter@7a0f244f, org.springframework.security.web.authentication.logout.LogoutFilter@7be3a9ce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@764cba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a230001, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c0b4c83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12968227, org.springframework.security.web.session.SessionManagementFilter@54657dd2, org.springframework.security.web.access.ExceptionTranslationFilter@1846579f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@93f432e]
+2020-01-30 11:15:46,016 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:15:46,349 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:15:46,369 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 20 ms
+2020-01-30 11:15:46,422 INFO c.b.i.TestUserController [main] Started TestUserController in 2.483 seconds (JVM running for 5.369)
+2020-01-30 11:15:46,672 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:15:46,675 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:15:46,772 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:16:22,824 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 33012 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:16:22,839 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:16:22,840 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:16:24,382 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2cfa2c4f, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ac6c4f2, org.springframework.security.web.header.HeaderWriterFilter@7f08caf, org.springframework.security.web.authentication.logout.LogoutFilter@285f38f6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ad3324b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61f39bb, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d654825, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ecab872, org.springframework.security.web.session.SessionManagementFilter@40e60ece, org.springframework.security.web.access.ExceptionTranslationFilter@75fc1992, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@28501a4b]
+2020-01-30 11:16:24,654 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:16:24,983 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:16:25,004 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 19 ms
+2020-01-30 11:16:25,055 INFO c.b.i.TestUserController [main] Started TestUserController in 2.499 seconds (JVM running for 5.323)
+2020-01-30 11:16:25,270 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:16:25,272 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:16:25,358 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:16:52,672 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 28756 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:16:52,682 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:16:52,682 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:16:54,410 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4422dd48, org.springframework.security.web.context.SecurityContextPersistenceFilter@2330e3e0, org.springframework.security.web.header.HeaderWriterFilter@75fc1992, org.springframework.security.web.authentication.logout.LogoutFilter@1b4ae4e0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@34f392be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@27a2a089, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5ac6c4f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@764cba, org.springframework.security.web.session.SessionManagementFilter@4248b963, org.springframework.security.web.access.ExceptionTranslationFilter@4e6f2bb5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53b8afea]
+2020-01-30 11:16:54,739 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:16:55,112 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:16:55,143 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 31 ms
+2020-01-30 11:16:55,185 INFO c.b.i.TestUserController [main] Started TestUserController in 2.793 seconds (JVM running for 5.616)
+2020-01-30 11:16:55,424 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:16:55,426 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:16:55,494 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:17:29,589 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 30036 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:17:29,598 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:17:29,598 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:17:31,162 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a87b51, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e60ece, org.springframework.security.web.header.HeaderWriterFilter@7a0f244f, org.springframework.security.web.authentication.logout.LogoutFilter@7be3a9ce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@764cba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a230001, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c0b4c83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12968227, org.springframework.security.web.session.SessionManagementFilter@54657dd2, org.springframework.security.web.access.ExceptionTranslationFilter@1846579f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@93f432e]
+2020-01-30 11:17:31,479 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:17:31,827 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:17:31,845 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 17 ms
+2020-01-30 11:17:31,887 INFO c.b.i.TestUserController [main] Started TestUserController in 2.574 seconds (JVM running for 5.588)
+2020-01-30 11:17:32,139 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:17:32,141 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:17:32,257 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:17:42,380 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 32016 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:17:42,397 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:17:42,398 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:17:44,006 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a87b51, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e60ece, org.springframework.security.web.header.HeaderWriterFilter@7a0f244f, org.springframework.security.web.authentication.logout.LogoutFilter@7be3a9ce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@764cba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a230001, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c0b4c83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12968227, org.springframework.security.web.session.SessionManagementFilter@54657dd2, org.springframework.security.web.access.ExceptionTranslationFilter@1846579f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@93f432e]
+2020-01-30 11:17:44,354 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:17:44,727 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:17:44,745 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 18 ms
+2020-01-30 11:17:44,790 INFO c.b.i.TestUserController [main] Started TestUserController in 2.677 seconds (JVM running for 5.588)
+2020-01-30 11:17:45,064 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:17:45,068 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 4 ms
+2020-01-30 11:17:45,175 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:18:08,464 INFO c.b.i.TestUserController [main] Starting TestUserController on LAPTOP-MAI0FJBD with PID 34208 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:18:08,479 DEBUG c.b.i.TestUserController [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:18:08,479 INFO c.b.i.TestUserController [main] The following profiles are active: dev
+2020-01-30 11:18:10,074 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a87b51, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e60ece, org.springframework.security.web.header.HeaderWriterFilter@7a0f244f, org.springframework.security.web.authentication.logout.LogoutFilter@7be3a9ce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@764cba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a230001, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c0b4c83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12968227, org.springframework.security.web.session.SessionManagementFilter@54657dd2, org.springframework.security.web.access.ExceptionTranslationFilter@1846579f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@93f432e]
+2020-01-30 11:18:10,355 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:18:10,703 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:18:10,735 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 32 ms
+2020-01-30 11:18:10,770 INFO c.b.i.TestUserController [main] Started TestUserController in 2.567 seconds (JVM running for 5.485)
+2020-01-30 11:18:11,016 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:18:11,019 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 3 ms
+2020-01-30 11:18:11,110 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:34:13,389 INFO c.b.i.SpringBootDemoApplicationTests [main] Starting SpringBootDemoApplicationTests on LAPTOP-MAI0FJBD with PID 18824 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:34:13,428 DEBUG c.b.i.SpringBootDemoApplicationTests [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:34:13,429 INFO c.b.i.SpringBootDemoApplicationTests [main] The following profiles are active: dev
+2020-01-30 11:34:16,938 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 11:34:17,150 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 186ms. Found 3 JPA repository interfaces.
+2020-01-30 11:34:17,941 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 11:34:18,530 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 11:34:18,732 INFO o.h.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-30 11:34:18,947 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 11:34:19,136 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-01-30 11:34:19,556 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-01-30 11:34:19,609 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-30 11:34:21,166 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 11:34:21,189 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 11:34:24,569 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7d9a8bc3, org.springframework.security.web.context.SecurityContextPersistenceFilter@3d6fcdef, org.springframework.security.web.header.HeaderWriterFilter@3dcc9159, org.springframework.security.web.authentication.logout.LogoutFilter@7f91226d, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1bb962cf, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12aa3712, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@303e8e4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@40a4a0da, org.springframework.security.web.session.SessionManagementFilter@2b107caf, org.springframework.security.web.access.ExceptionTranslationFilter@61081fd5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4aecfbcd]
+2020-01-30 11:34:25,333 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:34:26,004 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-01-30 11:34:26,074 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-01-30 11:34:26,106 INFO s.d.s.w.s.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-01-30 11:34:26,463 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_1
+2020-01-30 11:34:26,470 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingDELETE_1
+2020-01-30 11:34:26,473 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_2
+2020-01-30 11:34:26,478 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_3
+2020-01-30 11:34:26,481 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_4
+2020-01-30 11:34:26,485 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_5
+2020-01-30 11:34:26,490 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_6
+2020-01-30 11:34:26,501 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_7
+2020-01-30 11:34:26,505 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_8
+2020-01-30 11:34:26,515 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_9
+2020-01-30 11:34:26,522 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_10
+2020-01-30 11:34:26,538 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_11
+2020-01-30 11:34:26,548 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_12
+2020-01-30 11:34:26,552 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_13
+2020-01-30 11:34:26,555 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_14
+2020-01-30 11:34:26,565 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_15
+2020-01-30 11:34:26,569 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_16
+2020-01-30 11:34:26,576 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingPOST_1
+2020-01-30 11:34:26,586 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_17
+2020-01-30 11:34:26,589 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_18
+2020-01-30 11:34:26,600 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: testUsingGET_1
+2020-01-30 11:34:26,680 INFO c.b.i.SpringBootDemoApplicationTests [main] Started SpringBootDemoApplicationTests in 14.199 seconds (JVM running for 18.877)
+2020-01-30 11:34:27,386 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:34:27,603 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 11:34:27,606 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-01-30 11:34:27,611 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-01-30 11:35:28,913 INFO c.b.i.SpringBootDemoApplicationTests [main] Starting SpringBootDemoApplicationTests on LAPTOP-MAI0FJBD with PID 26212 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:35:28,964 DEBUG c.b.i.SpringBootDemoApplicationTests [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:35:28,966 INFO c.b.i.SpringBootDemoApplicationTests [main] The following profiles are active: dev
+2020-01-30 11:35:32,538 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-30 11:35:32,697 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 136ms. Found 3 JPA repository interfaces.
+2020-01-30 11:35:33,518 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [main] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-30 11:35:34,017 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-30 11:35:34,264 INFO o.h.Version [main] HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-30 11:35:34,529 INFO o.h.a.c.Version [main] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-30 11:35:34,725 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2020-01-30 11:35:35,217 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2020-01-30 11:35:35,258 INFO o.h.d.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-30 11:35:36,843 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-30 11:35:36,870 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 11:35:40,317 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ce3cc9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@c9cd606, org.springframework.security.web.header.HeaderWriterFilter@11f743f4, org.springframework.security.web.authentication.logout.LogoutFilter@59bf4b34, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6ebdbad0, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@727d7824, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4a84cb57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c277d6, org.springframework.security.web.session.SessionManagementFilter@641bb893, org.springframework.security.web.access.ExceptionTranslationFilter@48525edf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2570755d]
+2020-01-30 11:35:41,029 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:35:41,619 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Context refreshed
+2020-01-30 11:35:41,723 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [main] Found 1 custom documentation plugin(s)
+2020-01-30 11:35:41,750 INFO s.d.s.w.s.ApiListingReferenceScanner [main] Scanning for api listing references
+2020-01-30 11:35:42,117 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_1
+2020-01-30 11:35:42,125 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_2
+2020-01-30 11:35:42,128 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingDELETE_1
+2020-01-30 11:35:42,131 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_3
+2020-01-30 11:35:42,135 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_4
+2020-01-30 11:35:42,139 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_5
+2020-01-30 11:35:42,145 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_6
+2020-01-30 11:35:42,148 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_7
+2020-01-30 11:35:42,152 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_8
+2020-01-30 11:35:42,156 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_9
+2020-01-30 11:35:42,166 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_10
+2020-01-30 11:35:42,171 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_11
+2020-01-30 11:35:42,184 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_12
+2020-01-30 11:35:42,188 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_13
+2020-01-30 11:35:42,194 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_14
+2020-01-30 11:35:42,198 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_15
+2020-01-30 11:35:42,202 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_16
+2020-01-30 11:35:42,209 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingPOST_1
+2020-01-30 11:35:42,219 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_17
+2020-01-30 11:35:42,231 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: handleUsingGET_18
+2020-01-30 11:35:42,237 INFO s.d.s.w.r.o.CachingOperationNameGenerator [main] Generating unique operation named: testUsingGET_1
+2020-01-30 11:35:42,350 INFO c.b.i.SpringBootDemoApplicationTests [main] Started SpringBootDemoApplicationTests in 14.34 seconds (JVM running for 19.607)
+2020-01-30 11:35:43,070 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:35:43,363 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [SpringContextShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-01-30 11:35:43,366 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown initiated...
+2020-01-30 11:35:43,372 INFO c.z.h.HikariDataSource [SpringContextShutdownHook] HikariPool-1 - Shutdown completed.
+2020-01-30 11:44:01,608 INFO c.b.i.AdminControllerTest [main] Starting AdminControllerTest on LAPTOP-MAI0FJBD with PID 20652 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:44:01,618 DEBUG c.b.i.AdminControllerTest [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:44:01,618 INFO c.b.i.AdminControllerTest [main] The following profiles are active: dev
+2020-01-30 11:44:03,061 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a87b51, org.springframework.security.web.context.SecurityContextPersistenceFilter@40e60ece, org.springframework.security.web.header.HeaderWriterFilter@7a0f244f, org.springframework.security.web.authentication.logout.LogoutFilter@7be3a9ce, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@764cba, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3a230001, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2c0b4c83, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12968227, org.springframework.security.web.session.SessionManagementFilter@54657dd2, org.springframework.security.web.access.ExceptionTranslationFilter@1846579f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@93f432e]
+2020-01-30 11:44:03,407 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:44:03,825 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:44:03,848 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 23 ms
+2020-01-30 11:44:03,898 INFO c.b.i.AdminControllerTest [main] Started AdminControllerTest in 2.581 seconds (JVM running for 5.498)
+2020-01-30 11:44:04,122 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:44:04,124 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:44:04,208 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:44:34,812 INFO c.b.i.AdminControllerTest [main] Starting AdminControllerTest on LAPTOP-MAI0FJBD with PID 11216 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:44:34,827 DEBUG c.b.i.AdminControllerTest [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:44:34,827 INFO c.b.i.AdminControllerTest [main] The following profiles are active: dev
+2020-01-30 11:44:36,256 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@144ab54, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a230001, org.springframework.security.web.header.HeaderWriterFilter@4248b963, org.springframework.security.web.authentication.logout.LogoutFilter@3baf6936, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58496c97, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2aa6311a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d0ecb24, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cfa2c4f, org.springframework.security.web.session.SessionManagementFilter@72725ee1, org.springframework.security.web.access.ExceptionTranslationFilter@2650f79, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16eedaa6]
+2020-01-30 11:44:36,525 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:44:36,838 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:44:36,858 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 20 ms
+2020-01-30 11:44:36,895 INFO c.b.i.AdminControllerTest [main] Started AdminControllerTest in 2.342 seconds (JVM running for 5.097)
+2020-01-30 11:44:37,122 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:44:37,123 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2020-01-30 11:44:37,182 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:45:01,135 INFO c.b.i.AdminControllerTest [main] Starting AdminControllerTest on LAPTOP-MAI0FJBD with PID 19320 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:45:01,151 DEBUG c.b.i.AdminControllerTest [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:45:01,151 INFO c.b.i.AdminControllerTest [main] The following profiles are active: dev
+2020-01-30 11:45:02,585 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@144ab54, org.springframework.security.web.context.SecurityContextPersistenceFilter@3a230001, org.springframework.security.web.header.HeaderWriterFilter@4248b963, org.springframework.security.web.authentication.logout.LogoutFilter@3baf6936, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@58496c97, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2aa6311a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2d0ecb24, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cfa2c4f, org.springframework.security.web.session.SessionManagementFilter@72725ee1, org.springframework.security.web.access.ExceptionTranslationFilter@2650f79, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@16eedaa6]
+2020-01-30 11:45:02,882 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:45:03,208 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:45:03,229 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 21 ms
+2020-01-30 11:45:03,280 INFO c.b.i.AdminControllerTest [main] Started AdminControllerTest in 2.418 seconds (JVM running for 5.332)
+2020-01-30 11:45:03,483 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:45:03,485 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2020-01-30 11:45:03,574 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:45:27,246 INFO c.b.i.AdminControllerTest [main] Starting AdminControllerTest on LAPTOP-MAI0FJBD with PID 956 (started by classpath in E:\bt-spring-boot-2\spring-boot-web)
+2020-01-30 11:45:27,264 DEBUG c.b.i.AdminControllerTest [main] Running with Spring Boot v2.2.4.RELEASE, Spring v5.2.3.RELEASE
+2020-01-30 11:45:27,265 INFO c.b.i.AdminControllerTest [main] The following profiles are active: dev
+2020-01-30 11:45:28,610 INFO o.s.s.w.DefaultSecurityFilterChain [main] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@ad3324b, org.springframework.security.web.context.SecurityContextPersistenceFilter@706eab5d, org.springframework.security.web.header.HeaderWriterFilter@7be7e15, org.springframework.security.web.authentication.logout.LogoutFilter@2954b5ea, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@27e5b378, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@40e60ece, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4893b344, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3872bc37, org.springframework.security.web.session.SessionManagementFilter@24b4d544, org.springframework.security.web.access.ExceptionTranslationFilter@26d96e5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@499ef98e]
+2020-01-30 11:45:28,911 INFO o.s.s.c.ThreadPoolTaskExecutor [main] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-30 11:45:29,256 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:45:29,278 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 22 ms
+2020-01-30 11:45:29,334 INFO c.b.i.AdminControllerTest [main] Started AdminControllerTest in 2.362 seconds (JVM running for 5.089)
+2020-01-30 11:45:29,569 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:45:29,572 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:45:29,672 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:45:29,673 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 1 ms
+2020-01-30 11:45:29,683 INFO o.s.t.w.s.TestDispatcherServlet [main] Initializing Servlet ''
+2020-01-30 11:45:29,686 INFO o.s.t.w.s.TestDispatcherServlet [main] Completed initialization in 2 ms
+2020-01-30 11:45:29,701 INFO o.s.s.c.ThreadPoolTaskExecutor [SpringContextShutdownHook] Shutting down ExecutorService 'applicationTaskExecutor'

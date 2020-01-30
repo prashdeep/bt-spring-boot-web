@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.util.Assert;
 
@@ -20,8 +21,8 @@ import static org.junit.Assert.fail;
 import static org.mockito.Mockito.*;
 import static org.springframework.util.Assert.notNull;
 
-@RunWith(SpringRunner.class)
-public class TestItemService {
+@RunWith(SpringJUnit4ClassRunner.class)
+public class ItemServiceTest {
 
     private Item item;
 
