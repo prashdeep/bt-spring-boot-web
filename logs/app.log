@@ -5504,3 +5504,98 @@ com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Cannot construct 
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_191]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
 	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_191]
+2020-01-31 12:53:45,401 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Fetching config from server at : http://localhost:8888
+2020-01-31 12:53:46,105 INFO o.s.c.c.c.ConfigServicePropertySourceLocator [restartedMain] Located environment: name=assetmgmt, profiles=[default], label=null, version=null, state=null
+2020-01-31 12:53:46,106 INFO o.s.c.b.c.PropertySourceBootstrapConfiguration [restartedMain] Located property source: OriginTrackedCompositePropertySource {name='configService', propertySources=[OriginTrackedMapPropertySource {name='file:///E:/config/assetmgmt/assetmgmt.properties'}]}
+2020-01-31 12:53:46,154 INFO c.b.i.SpringBootDemoApplication [restartedMain] The following profiles are active: dev
+2020-01-31 12:53:47,143 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2020-01-31 12:53:47,213 INFO o.s.d.r.c.RepositoryConfigurationDelegate [restartedMain] Finished Spring Data repository scanning in 63ms. Found 3 JPA repository interfaces.
+2020-01-31 12:53:47,460 INFO o.s.c.c.s.GenericScope [restartedMain] BeanFactory id=f789ca4c-9946-3d2a-8243-6fdcfb4c3eb5
+2020-01-31 12:53:47,580 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-31 12:53:47,627 INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker [restartedMain] Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$aa9cd6bc] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-01-31 12:53:47,955 INFO o.a.c.h.Http11NioProtocol [restartedMain] Initializing ProtocolHandler ["http-nio-8111"]
+2020-01-31 12:53:47,956 INFO o.a.c.c.StandardService [restartedMain] Starting service [Tomcat]
+2020-01-31 12:53:47,956 INFO o.a.c.c.StandardEngine [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.30]
+2020-01-31 12:53:47,958 INFO o.a.c.c.AprLifecycleListener [restartedMain] An older version [1.2.17] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.23]
+2020-01-31 12:53:47,958 INFO o.a.c.c.AprLifecycleListener [restartedMain] Loaded APR based Apache Tomcat Native library [1.2.17] using APR version [1.6.3].
+2020-01-31 12:53:47,959 INFO o.a.c.c.AprLifecycleListener [restartedMain] APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2020-01-31 12:53:47,959 INFO o.a.c.c.AprLifecycleListener [restartedMain] APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2020-01-31 12:53:49,024 INFO o.a.c.c.AprLifecycleListener [restartedMain] OpenSSL successfully initialized [OpenSSL 1.0.2o  27 Mar 2018]
+2020-01-31 12:53:49,145 INFO o.a.c.c.C.[.[.[/] [restartedMain] Initializing Spring embedded WebApplicationContext
+2020-01-31 12:53:49,145 INFO o.s.w.c.ContextLoader [restartedMain] Root WebApplicationContext: initialization completed in 2977 ms
+2020-01-31 12:53:49,232 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-01-31 12:53:49,232 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-31 12:53:49,243 INFO c.n.c.DynamicPropertyFactory [restartedMain] DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3dc37259
+2020-01-31 12:53:49,330 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Starting...
+2020-01-31 12:53:49,423 INFO c.z.h.HikariDataSource [restartedMain] HikariPool-1 - Start completed.
+2020-01-31 12:53:50,339 INFO o.h.j.i.u.LogHelper [restartedMain] HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-01-31 12:53:50,403 INFO o.h.Version [restartedMain] HHH000412: Hibernate Core {5.4.10.Final}
+2020-01-31 12:53:50,513 INFO o.h.a.c.Version [restartedMain] HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-01-31 12:53:50,612 INFO o.h.d.Dialect [restartedMain] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-01-31 12:53:51,445 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [restartedMain] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-01-31 12:53:51,451 INFO o.s.o.j.LocalContainerEntityManagerFactoryBean [restartedMain] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-01-31 12:53:53,004 INFO o.s.s.w.DefaultSecurityFilterChain [restartedMain] Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7231d6ad, org.springframework.security.web.context.SecurityContextPersistenceFilter@1c56a79b, org.springframework.security.web.header.HeaderWriterFilter@468a36e9, org.springframework.security.web.authentication.logout.LogoutFilter@19f56e88, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@a78dcc6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@524943d2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3296fbdf, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e444644, org.springframework.security.web.session.SessionManagementFilter@e047de, org.springframework.security.web.access.ExceptionTranslationFilter@2736a467, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1a867838]
+2020-01-31 12:53:53,013 WARN c.n.c.s.URLConfigurationSource [restartedMain] No URLs will be polled as dynamic configuration sources.
+2020-01-31 12:53:53,013 INFO c.n.c.s.URLConfigurationSource [restartedMain] To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-01-31 12:53:53,112 INFO o.s.s.c.ThreadPoolTaskExecutor [restartedMain] Initializing ExecutorService 'applicationTaskExecutor'
+2020-01-31 12:53:53,346 WARN o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger [restartedMain] You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-01-31 12:53:53,423 INFO o.s.c.n.e.InstanceInfoFactory [restartedMain] Setting initial instance status as: STARTING
+2020-01-31 12:53:53,474 INFO c.n.d.DiscoveryClient [restartedMain] Initializing Eureka in region us-east-1
+2020-01-31 12:53:53,543 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using JSON encoding codec LegacyJacksonJson
+2020-01-31 12:53:53,543 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using JSON decoding codec LegacyJacksonJson
+2020-01-31 12:53:53,655 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using XML encoding codec XStreamXml
+2020-01-31 12:53:53,656 INFO c.n.d.p.DiscoveryJerseyProvider [restartedMain] Using XML decoding codec XStreamXml
+2020-01-31 12:53:53,802 INFO c.n.d.s.r.a.ConfigClusterResolver [restartedMain] Resolving eureka endpoints via configuration
+2020-01-31 12:53:54,166 INFO c.n.d.DiscoveryClient [restartedMain] Disable delta property : false
+2020-01-31 12:53:54,166 INFO c.n.d.DiscoveryClient [restartedMain] Single vip registry refresh property : null
+2020-01-31 12:53:54,166 INFO c.n.d.DiscoveryClient [restartedMain] Force full registry fetch : false
+2020-01-31 12:53:54,166 INFO c.n.d.DiscoveryClient [restartedMain] Application is null : false
+2020-01-31 12:53:54,166 INFO c.n.d.DiscoveryClient [restartedMain] Registered Applications size is zero : true
+2020-01-31 12:53:54,166 INFO c.n.d.DiscoveryClient [restartedMain] Application version is -1: true
+2020-01-31 12:53:54,166 INFO c.n.d.DiscoveryClient [restartedMain] Getting all instance registry info from the eureka server
+2020-01-31 12:53:54,272 INFO c.n.d.DiscoveryClient [restartedMain] The response status is 200
+2020-01-31 12:53:54,274 INFO c.n.d.DiscoveryClient [restartedMain] Starting heartbeat executor: renew interval is: 30
+2020-01-31 12:53:54,276 INFO c.n.d.InstanceInfoReplicator [restartedMain] InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-01-31 12:53:54,280 INFO c.n.d.DiscoveryClient [restartedMain] Discovery Client initialized at timestamp 1580455434279 with initial instances count: 6
+2020-01-31 12:53:54,282 INFO o.s.c.n.e.s.EurekaServiceRegistry [restartedMain] Registering application ASSETMGMT with eureka with status UP
+2020-01-31 12:53:54,282 INFO c.n.d.DiscoveryClient [restartedMain] Saw local status change event StatusChangeEvent [timestamp=1580455434282, current=UP, previous=STARTING]
+2020-01-31 12:53:54,284 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ASSETMGMT/LAPTOP-MAI0FJBD:assetmgmt:8111: registering service...
+2020-01-31 12:53:54,302 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Context refreshed
+2020-01-31 12:53:54,315 INFO s.d.s.w.p.DocumentationPluginsBootstrapper [restartedMain] Found 1 custom documentation plugin(s)
+2020-01-31 12:53:54,318 INFO c.n.d.DiscoveryClient [DiscoveryClient-InstanceInfoReplicator-0] DiscoveryClient_ASSETMGMT/LAPTOP-MAI0FJBD:assetmgmt:8111 - registration status: 204
+2020-01-31 12:53:54,323 INFO s.d.s.w.s.ApiListingReferenceScanner [restartedMain] Scanning for api listing references
+2020-01-31 12:53:54,440 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_1
+2020-01-31 12:53:54,441 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_2
+2020-01-31 12:53:54,443 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingDELETE_1
+2020-01-31 12:53:54,444 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_3
+2020-01-31 12:53:54,445 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_4
+2020-01-31 12:53:54,446 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_5
+2020-01-31 12:53:54,447 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_6
+2020-01-31 12:53:54,448 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_7
+2020-01-31 12:53:54,450 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingDELETE_2
+2020-01-31 12:53:54,451 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_8
+2020-01-31 12:53:54,453 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_9
+2020-01-31 12:53:54,454 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_10
+2020-01-31 12:53:54,456 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_11
+2020-01-31 12:53:54,457 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_12
+2020-01-31 12:53:54,458 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_13
+2020-01-31 12:53:54,459 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingPOST_1
+2020-01-31 12:53:54,460 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_14
+2020-01-31 12:53:54,461 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_15
+2020-01-31 12:53:54,462 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_16
+2020-01-31 12:53:54,463 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_17
+2020-01-31 12:53:54,464 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingPOST_2
+2020-01-31 12:53:54,465 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_18
+2020-01-31 12:53:54,466 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_19
+2020-01-31 12:53:54,466 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingPOST_3
+2020-01-31 12:53:54,467 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingPOST_4
+2020-01-31 12:53:54,468 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_20
+2020-01-31 12:53:54,469 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: handleUsingGET_21
+2020-01-31 12:53:54,471 INFO s.d.s.w.r.o.CachingOperationNameGenerator [restartedMain] Generating unique operation named: testUsingGET_1
+2020-01-31 12:53:54,484 INFO o.a.c.h.Http11NioProtocol [restartedMain] Starting ProtocolHandler ["http-nio-8111"]
+2020-01-31 12:53:54,505 INFO o.s.c.n.e.s.EurekaAutoServiceRegistration [restartedMain] Updating port to 8111
+2020-01-31 12:53:55,077 INFO c.b.i.SpringBootDemoApplication [restartedMain] Started SpringBootDemoApplication in 12.024 seconds (JVM running for 14.423)
+2020-01-31 12:53:58,668 INFO o.a.c.c.C.[.[.[/] [http-nio-8111-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-01-31 12:53:58,668 INFO o.s.w.s.DispatcherServlet [http-nio-8111-exec-1] Initializing Servlet 'dispatcherServlet'
+2020-01-31 12:53:58,677 INFO o.s.w.s.DispatcherServlet [http-nio-8111-exec-1] Completed initialization in 9 ms
+2020-01-31 12:58:54,168 INFO c.n.d.s.r.a.ConfigClusterResolver [AsyncResolver-bootstrap-executor-0] Resolving eureka endpoints via configuration

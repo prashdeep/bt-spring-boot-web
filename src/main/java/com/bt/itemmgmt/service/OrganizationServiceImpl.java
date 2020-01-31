@@ -15,6 +15,8 @@ public class OrganizationServiceImpl implements OrganizationService {
     @Autowired
     private DiscoveryClient discoveryClient;
 
+   /*
+     Naive implementation using RestTemplate
     @Override
     public Organization getOrgById(int id) {
         String organizationservice = this.discoveryClient
@@ -27,6 +29,15 @@ public class OrganizationServiceImpl implements OrganizationService {
 
         Organization organization = this.restTemplate
                 .getForObject(  organizationservice + "/api/v1/organization/"+id, Organization.class);
+
+        return organization;
+    }*/
+
+    // With Ribbon
+    @Override
+    public Organization getOrgById(int id) {
+        Organization organization = this.restTemplate
+                .getForObject(    "http://ORGANIZATIONSERVICE/api/v1/organization/"+id, Organization.class);
 
         return organization;
     }
