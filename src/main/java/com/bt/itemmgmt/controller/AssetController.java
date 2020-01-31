@@ -1,7 +1,9 @@
 package com.bt.itemmgmt.controller;
 
 import com.bt.itemmgmt.model.Item;
+import com.bt.itemmgmt.model.Organization;
 import com.bt.itemmgmt.service.ItemService;
+import com.bt.itemmgmt.service.OrganizationService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
@@ -29,6 +31,9 @@ public class AssetController {
 
     @Autowired
     private ApplicationContext applicationContext;
+
+    @Autowired
+    private OrganizationService organizationService;
 
     public AssetController(ItemService assetService){
         this.assetService = assetService;
@@ -70,6 +75,11 @@ public class AssetController {
     @GetMapping("/env")
     public String getCurrentenv(){
         return "{\"env\": \""+this.env+"\"}";
+    }
+
+    @GetMapping("/org/{id}")
+    public Organization getOrganizationById(@PathVariable("id") int id){
+        return this.organizationService.getOrgById(id);
     }
 
     //@ExceptionHandler(RuntimeException.class)
